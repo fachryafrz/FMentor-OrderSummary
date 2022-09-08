@@ -1,37 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Order summary card</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Order summary card</title>
 
-  Order Summary
+    <!-- TailwindCSS -->
+    <link rel="stylesheet" href="./build.css" />
 
-  You can now listen to millions of songs, audiobooks, and podcasts on any 
-  device anywhere you like!
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-blue-pale grid place-items-center h-screen isolate">
+    <!-- Backgrounds -->
+    <div class="absolute top-0 inset-x-0">
+      <!-- Mobile -->
+      <img
+        src="./images/pattern-background-mobile.svg"
+        alt="Background"
+        class="object-cover sm:hidden w-full"
+      />
 
-  Annual Plan
-  $59.99/year
+      <!-- Desktop -->
+      <img
+        src="./images/pattern-background-desktop.svg"
+        alt="Background"
+        class="object-cover hidden sm:block w-full"
+      />
+    </div>
+    <!-- Card -->
+    <div class="rounded-2xl overflow-hidden w-80 shadow-lg z-20">
+      <img
+        src="./images/illustration-hero.svg"
+        alt="Vibing while listening to music"
+      />
+      <main class="bg-white p-6 font-red-hat flex flex-col items-center gap-4">
+        <h1 class="font-black text-xl text-blue-dark">Order Summary</h1>
+        <p
+          class="text-center text-blue-desaturated text-sm leading-6 mx-4 mb-2"
+        >
+          You can now listen to millions of songs, audiobooks, and podcasts on
+          any device anywhere you like!
+        </p>
+        <div
+          class="w-full flex gap-4 text-sm items-center bg-blue-very-pale p-4 rounded-lg"
+        >
+          <img src="./images/icon-music.svg" alt="Music" />
+          <div>
+            <h2 class="font-black mb-1 text-blue-dark">Annual Plan</h2>
+            <div class="text-blue-desaturated">$59.99/year</div>
+          </div>
+          <a
+            href="#"
+            class="ml-auto text-blue-bright underline font-bold text-xs hover:opacity-75"
+            >Change</a
+          >
+        </div>
+        <div class="flex flex-col gap-6 w-full items-center">
+          <button
+            type="button"
+            class="bg-blue-bright p-3 w-full rounded-xl text-white font-semibold text-sm shadow-lg hover:opacity-75 transition-all"
+            onclick="return alert('Your order will be processed shortly')"
+          >
+            Proceed to Payment
+          </button>
+          <button
+            type="button"
+            class="w-fit text-blue-desaturated font-bold text-sm hover:text-blue-dark"
+            onclick="return confirm('Are you sure want to cancel the order?')"
+          >
+            Cancel Order
+          </button>
+        </div>
+      </main>
+    </div>
 
-  Change
-
-  Proceed to Payment
-  Cancel Order
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <!-- Attribution -->
+    <div class="fixed bottom-0 inset-x-0 text-center">
+      Challenge by
+      <a
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
+        class="font-bold text-blue-bright"
+        >Frontend Mentor</a
+      >. Coded by
+      <a
+        href="https://www.frontendmentor.io/profile/fachryafrz"
+        target="_blank"
+        class="font-bold text-blue-bright"
+        >fachryafrz</a
+      >.
+    </div>
+  </body>
 </html>
