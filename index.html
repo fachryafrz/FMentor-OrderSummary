@@ -27,21 +27,17 @@
   </head>
   <body class="bg-blue-pale grid place-items-center h-screen isolate">
     <!-- Backgrounds -->
-    <div class="absolute top-0 inset-x-0">
-      <!-- Mobile -->
+    <picture class="absolute top-0 inset-x-0">
+      <source
+        media="(min-width:375px)"
+        srcset="./images/pattern-background-desktop.svg"
+      />
       <img
         src="./images/pattern-background-mobile.svg"
         alt="Background"
-        class="object-cover sm:hidden w-full"
+        class="w-full"
       />
-
-      <!-- Desktop -->
-      <img
-        src="./images/pattern-background-desktop.svg"
-        alt="Background"
-        class="object-cover hidden sm:block w-full"
-      />
-    </div>
+    </picture>
     <!-- Card -->
     <div class="rounded-2xl overflow-hidden max-w-sm shadow-lg z-20 mx-4">
       <img
