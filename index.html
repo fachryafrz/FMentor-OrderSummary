@@ -43,44 +43,42 @@
       />
     </div>
     <!-- Card -->
-    <div class="rounded-2xl overflow-hidden w-80 shadow-lg z-20">
+    <div class="rounded-2xl overflow-hidden max-w-sm shadow-lg z-20 mx-4">
       <img
         src="./images/illustration-hero.svg"
         alt="Vibing while listening to music"
       />
       <main class="bg-white p-6 font-red-hat flex flex-col items-center gap-4">
-        <h1 class="font-black text-xl text-blue-dark">Order Summary</h1>
-        <p
-          class="text-center text-blue-desaturated text-sm leading-6 mx-4 mb-2"
-        >
+        <h1 class="font-black text-2xl text-blue-dark">Order Summary</h1>
+        <p class="text-center text-blue-desaturated leading-6 mx-4 mb-2">
           You can now listen to millions of songs, audiobooks, and podcasts on
           any device anywhere you like!
         </p>
         <div
-          class="w-full flex gap-4 text-sm items-center bg-blue-very-pale p-4 rounded-lg"
+          class="w-full flex gap-4 items-center bg-blue-very-pale p-4 rounded-lg"
         >
           <img src="./images/icon-music.svg" alt="Music" />
           <div>
-            <h2 class="font-black mb-1 text-blue-dark">Annual Plan</h2>
-            <div class="text-blue-desaturated">$59.99/year</div>
+            <h2 class="font-black mb-1 text-blue-dark text-sm">Annual Plan</h2>
+            <div class="text-blue-desaturated text-sm">$59.99/year</div>
           </div>
           <a
             href="#"
-            class="ml-auto text-blue-bright underline font-bold text-xs hover:opacity-75"
+            class="ml-auto text-blue-bright underline font-bold text-sm hover:opacity-75"
             >Change</a
           >
         </div>
-        <div class="flex flex-col gap-6 w-full items-center">
+        <div class="flex flex-col gap-4 w-full items-center">
           <button
             type="button"
-            class="bg-blue-bright p-3 w-full rounded-xl text-white font-semibold text-sm shadow-lg hover:opacity-75 transition-all"
+            class="bg-blue-bright p-3 w-full rounded-xl text-white font-semibold shadow-xl hover:opacity-75 transition-all text-sm hover:ring ring-offset-2 ring-blue-bright"
             onclick="return alert('Your order will be processed shortly')"
           >
             Proceed to Payment
           </button>
           <button
             type="button"
-            class="w-fit text-blue-desaturated font-bold text-sm hover:text-blue-dark"
+            class="w-fit text-blue-desaturated font-bold hover:text-blue-dark text-sm md:p-2"
             onclick="return confirm('Are you sure want to cancel the order?')"
           >
             Cancel Order
@@ -90,7 +88,7 @@
     </div>
 
     <!-- Attribution -->
-    <div class="fixed bottom-0 inset-x-0 text-center">
+    <div class="fixed bottom-0 inset-x-0 text-center text-xs">
       Challenge by
       <a
         href="https://www.frontendmentor.io?ref=challenge"
